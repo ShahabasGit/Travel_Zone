@@ -1,0 +1,511 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 95px;
+    background: rgba(230, 158, 23, 0.8);
+    box-shadow: 1.5px 1px 6px  rgba(0, 0, 0), 1px 1px 3px  rgba(0, 0, 0);
+    z-index: 10000;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+
+.logo {
+    color: rgba(255, 255, 255, .8);
+    
+} 
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    
+}
+
+.menu ul li a {
+    margin-right: 70px;
+    text-decoration: none;
+    font-size: 19px;
+    color: rgba(255, 255, 255, .9);
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover,
+.menu ul li a.active {
+    color: rgb(150, 240, 240);
+}
+
+.contact-button .contact {
+    padding: 7px 18px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#Spot-light {
+    padding: 135px 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Spot-light div.left h1{
+    font-size: 57px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+#Spot-light div.left p {
+    width: 470px;
+    letter-spacing: 1px;
+    color: rgb(87, 86, 86);
+    margin-bottom: 45px;
+}
+
+#Spot-light div.left a.btn {
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(230, 158, 23);
+    border-radius: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+#Spot-light div.left a.btn:hover {
+    background: transparent;
+    color: black;
+    border: 1px solid rgb(230, 158, 23);
+}
+
+#Spot-light div.left ul{
+    display: flex;
+    margin-top: 70px;
+    list-style: none;
+}
+
+#Spot-light div.left ul li {
+    margin-right: 30px;
+    color: rgb(255, 255, 255);
+    padding: 3px 7px;
+    border-radius: 50%;
+    background: #000;
+    transition: 0.6s ease-in-out;
+}
+
+#Spot-light div.left ul li:hover {
+    color: aqua;
+}
+
+
+
+#Spot-light div.right .black-top-left {
+    z-index: -1000;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #c0c0c0;
+    position: absolute;
+    right: 31%;
+    top: 16%;
+}
+
+#Spot-light div.right .black-bottom-right {
+    z-index: -1000;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #cecbcb;
+    position: absolute;
+    right: 6%;
+    bottom: 10px;
+}
+
+#Spot-light div.right .img-set {
+    display: flex;
+}
+  
+#Spot-light div.right .img-set img {
+    width: 350px;
+    height: 400px;
+    position: relative;
+    right: -260px;
+    bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 6px 6px 8px 0 rgba(0, 0, 0);
+
+}
+
+#Spot-light div.right .img-set img:last-child{
+    z-index: 1000;
+    position: relative;
+    top: 130px;
+    right: 230px;
+    height: 300px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0);
+}  
+
+#About {
+    height: 120vh;
+    width: 100%;
+    background: rgb(242, 168, 32);
+    padding: 40px 120px;
+}
+
+#About div.top h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 60px;
+    
+}
+
+#About div.top h1::before{
+    content: ' ';
+    border-bottom: 2px solid rgb(18, 113, 117);
+
+}
+
+#About div.top h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+#About div.top h2 span {
+    color: rgb(18, 113, 117);
+
+}
+
+#About div.middle p {
+    width: 650px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: 200px;
+    margin-bottom: 70px;
+}
+
+#About ul.bottom{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#About ul.bottom li img {
+    height: 300px;
+    width: 260px;
+    border-radius: 6px;
+    
+}
+
+
+
+#About ul.bottom li:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease-in-out;
+}
+
+#Tours {
+    height: 100vh;
+    width: 100%;
+}
+
+#Tours .top h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(255, 170, 12);
+    margin-bottom: 50px;
+}
+
+#Tours .top p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#Tours .cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    
+}
+
+#Tours  .cards .card {
+    width: 500px;
+    height: 450px;
+    background-color: #ecebeb;
+    margin-right: 20px;
+    border-radius: 6px;
+    position: relative;
+    
+}
+
+#Tours  .cards .card img {
+    width: 300px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+#Tours  .cards .card h3 {
+    text-align: center;
+    color: rgb(42, 159, 163);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#Tours .cards .card p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+#Tours .cards .card a.btn {
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(18, 113, 117);
+    border-radius: 3px;
+    margin-left: 90px;
+    transition: .5s ease-in-out;
+}
+
+#Tours .cards .card a.btn:hover {
+    background: transparent;
+    color: #000;
+    border: 1px solid rgb(18, 113, 117);
+
+}
+
+#Tours  .cards .card .sub-card {
+    width: 200px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    position: relative;
+    top: -2%;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0);
+    border-radius: 0 19px 19px 0;
+    padding: 10px 30px;
+}
+
+
+
+#Tours  .cards .card i {
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    top: 50%;
+    left: 76%;
+    background-color: rgb(18, 113, 117);
+    padding: 22px 25px;
+    border-radius: 19px 0 0 19px;
+    color: #fff;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0);
+}
+
+#Gallery{
+    width: 100%;
+    background: rgb(230, 158, 23);
+    margin-top: 50px;
+    padding-left: 30px;
+}
+
+#Gallery .top h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+
+#Gallery .img .grid{
+    display: flex;
+    padding: 20px;
+    margin-bottom: -50px;
+    
+}
+
+#Gallery .img .grid img {
+    width: 270px;
+    height: 270px;
+    margin-right: 50px;
+    border-radius: 19px;
+    
+    transition: 0.7s ease-in-out;
+}
+
+#Gallery .img .grid img:hover {
+    transform: scale(1.04);
+}
+
+
+#Gallery .img .grid h3{
+    position: relative;
+    bottom: 15%;
+    left: 10px;
+    color: #000000;
+    width: 170px;
+    background: rgb(255, 255, 255);
+    padding: 6px 9px;
+    border-radius: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid rgb(18, 113, 117);
+
+}
+
+#Gallery .img .grid i {
+    position: relative;
+    bottom: 27%;
+    left: 63%;
+    color: rgb(18, 113, 117);
+    background: #fff;
+    padding: 13px 16px;
+    border-radius: 50%;
+    border: 2px solid rgb(18, 113, 117);
+}
+ 
+
+#contact {
+    height: 103vh;
+    width: 100%;
+    background: rgb(12, 57, 59);
+    border-bottom: 2px solid #fff;
+}
+#contact .top h1 {
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+#contact .top  p {
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+#contact .Middle {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#contact .left {
+    padding: 90px 150px 0 190px;
+}
+
+#contact .left .colm {
+    display: flex;
+    color: #fff;
+    margin-bottom: 60px;
+}
+
+#contact .left .colm:last-child{
+    margin-bottom: 0;
+}
+
+#contact .left .colm:nth-child(2) {
+    margin-bottom: 85px;
+}
+
+#contact .left .colm  i {
+    margin-right: 30px;
+    margin-top: 6px;
+    background: #fff;
+    padding: 13px 15px;
+    height: 43px;
+    color: #000;
+    border-radius: 50%;
+    border: 1px solid rgb(230, 158, 23);
+}
+
+#contact .right {
+    padding: 90px 150px 0 10px;
+}
+
+#contact .right form {
+    background: #fff;
+    width: 450px;
+    padding: 30px;
+
+}
+
+#contact .right form h1 {
+    margin-bottom: 40px;
+}
+
+#contact .right form input {
+    display: block;
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+#contact .right form input:hover {
+    padding-left: 35px;
+}
+
+#contact .right form .btn {
+    padding: 10px 30px;
+    background: rgb(22, 138, 142);
+    border: none;
+    outline: none;
+    color: #fff;
+    transition: 0.6s ease-in-out;
+} 
+
+#contact .right form .btn:hover {
+    opacity: 0.7;
+}
+
+footer {
+    height: 60px;
+    width: 100%;
+    padding: 18px 100px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+footer ul {
+    display: flex;
+    margin-right: 50px;
+    list-style: none;
+}
+
+footer ul li {
+    margin-right: 30px;
+    border: 1px solid #fff;
+    padding: 3px 7px;
+    border-radius: 50%;
+    transition: 0.6s ease-in-out;
+}
+
+
+footer ul li:hover{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
